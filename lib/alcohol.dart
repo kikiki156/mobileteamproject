@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class alcohol extends StatelessWidget {
-  const alcohol({Key? key}) : super(key: key);
+class AlcoholPage extends StatelessWidget {
+  const AlcoholPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,22 +12,22 @@ class alcohol extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: const alcoholsuggestion(title: '전통주와 안주 추천'),
+      home: const AlcoholForm(title: '전통주와 안주 추천'),
     );
   }
 }
 
-class alcoholsuggestion extends StatefulWidget {
+class AlcoholForm extends StatefulWidget {
 
-  const alcoholsuggestion({super.key, required this.title});
+  const AlcoholForm({super.key, required this.title});
 
   final String title;
 
   @override
-  State<alcoholsuggestion> createState() => _alcoholsuggestionState();
+  State<AlcoholForm> createState() => _AlcoholFormState();
 }
 
-class _alcoholsuggestionState extends State<alcoholsuggestion> {
+class _AlcoholFormState extends State<AlcoholForm> {
 
   @override
   Widget build(BuildContext context) {
